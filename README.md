@@ -9,6 +9,7 @@ Employee Traker is an application that helps you keep track of employees. Simply
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
+* [Sample](#sample)
 * [License](#license)
 * [Contribution](#contribution)
 * [Questions](#questions)
@@ -22,8 +23,12 @@ npm install
 ## Usage
 Open a terminal window, type in "node index" and answer the questions. Once done the application will generate the updated employees database. 
 
+## Sample
+Here is a sample screenshot:
+<img src="./images/screenshot.PNG" >
 
 Video demonstrating the application:
+https://drive.google.com/file/d/1K4zE6-ahit-PT9SEv-m8bVz3i4DKzL_m/view
 
 
 
