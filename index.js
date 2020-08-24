@@ -16,13 +16,14 @@ const connection = mysql.createConnection({
       if (err) throw err;
         console.log(' WELCOME TO EMPLOYEE TRACKER!')
 
-    startPrompts();
+    // startPrompts();
   });
 
 // WHEN I start the application
 // THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
-function startPrompts() {
-    const prompt = await inquirer.prompt({
+async function startPrompts() {
+    const prompt = await inquirer.prompt([
+        {
         type: 'list',
         name: 'action',
         message: 'What would you like to do?',
@@ -35,7 +36,8 @@ function startPrompts() {
             'Add an employee',
             'Update an employee role'
         ]
-    });
+        }   
+    ]);
 
     if(prompt.action === 'View all departments') {
         viewAllDepartments();
@@ -285,3 +287,5 @@ function addAnEmployee() {
 //     })
 // }
 // function updateAnEmployeeRole(data)
+
+startPrompts();
